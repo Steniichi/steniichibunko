@@ -1,13 +1,13 @@
 const traduzioni = [
   {
     categoria: "Oggetti",
-    nome: "Scintipietra della Guida",
-    nomeOriginale: "道標の輝石",
-    letturaOriginale: "michishirube no kiseki",
-    nomeVecchio: "Augite della Guida",
-    icona: "img/demons_items/Augite_of_Guidance.webp",
-    descrizioneOriginale: "空気に触れ、一時的に光を放つ石<br><br>宝石の一種として珍重されるが、特に何の効果もない<br>ただ、道標として使用できるだろう",
-    traduzione: "Pietra che emette temporaneamente luce quando entra a contatto con l'aria.<br><br>È considerata preziosa al pari di una gemma, benché non possieda effetti particolari. Può tuttavia essere impiegata come segnale.",
+    nome: "Agalmatolite del segno bianco",
+    nomeOriginale: "白いサインろう石",
+    letturaOriginale: "shiroi sain rōseki",
+    nomeVecchio: "Pietra bianca",
+    icona: "img/dark1_items/segno_bianco.png",
+    descrizioneOriginale: `オンラインプレイ専用アイテム<br>召喚サインを書く<br><br>サインから他世界に霊体として召喚され<br>召喚されたエリアの主を倒すことができれば<br>人間性を得ることができる<br>（召喚は亡者では行えない）<br><br>時の流れの淀んだロードランの地で<br>不死人たちがお互い助け合うための手段`,
+    traduzione: "",
     note: ""
   },
   {
