@@ -12,13 +12,13 @@ const traduzioni = [
   },
   {
     categoria: "Armi",
-    nome: "Ascia Grande",
-    nomeOriginale: "グレートアクス",
-    letturaOriginale: "gurēto akusu",
-    nomeVecchio: "Ascia grande",
-    icona: "img/demons_weapons/Great_Axe.webp",
-    descrizioneOriginale: "大型の斧。大斧<br><br>斧と同様に汎用性の高い武器であるが<br>尋常な筋力では使用できないほどに重く<br>その重量を生かして、対象を吹き飛ばす<br><br>最適打撃の効果も、標準的な斧よりも大きい",
-    traduzione: "Ascia di grandi dimensioni.<br><br>Arma dalla notevole versatilità, simile alle normali asce, ma il suo peso la rende inadatta a chi possiede una forza comune. La sua massa può essere sfruttata per spazzare via il bersaglio.<br><br>L'effetto dei colpi ottimali è superiore rispetto a quello di un'ascia normale.",
+    nome: "Daga",
+    nomeOriginale: "ダガー",
+    letturaOriginale: "dagā",
+    nomeVecchio: "Pugnale",
+    icona: "img/dark1_weapons/dagger.png",
+    descrizioneOriginale: "武器種別：短剣<br>攻撃属性：斬撃/刺突<br><br>スタンダードな短剣<br>小型で攻撃力は低いが、素早い連撃が可能であり<br>パリィ後や背後からの致命の一撃の威力も高い<br><br>斬撃と刺突という二種類の攻撃属性を持ち<br>様々な状況に対応できるのも強みとなる",
+    traduzione: "",
     note: ""
   },
   {
