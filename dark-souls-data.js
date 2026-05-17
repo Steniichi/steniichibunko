@@ -32,6 +32,16 @@ const traduzioni = [
     traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere altri mondi. Può essere usato soltanto da coloro che hanno prestato il Voto, e non dai Morti Erranti.<br><br>Se riuscirai a sconfiggere il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questa è l'arte dei Dark Wraith, sobillati da Kaath. Essi vanno a caccia di Umanità, sprofondando sempre più nell’Oscurità. È forse questa la vera natura dell’uomo?"
   },
   {
+    categoria: "Oggetti",
+    nome: "Quarzo Nero della Separazione",
+    nomeOriginale: "決別の黒水晶",
+    letturaOriginale: "ketsubetsu no kurozuishō",
+    nomeVecchio: "Cristallo nero della separazione",
+    icona: "img/dark1_items/quarzo_nero.png",
+    descrizioneOriginale: "不死となった追放者に与えられる黒水晶は<br>古くより、決別の証であり<br>召喚した霊体を元の世界に戻し<br>召喚された他世界から元の世界に戻ることができる<br><br>だが、出会いを大切に思うのであれば<br>軽々しくこれを使用するべきではない",
+    traduzione: "Quarzo nero concesso agli Immortali esiliati. Sin dai tempi antichi, è considerato un segno di separazione. Permette di rispedire nel loro mondo gli spiriti evocati, oppure di fare ritorno al proprio mondo da un altro in cui si è stati evocati.<br><br>Tuttavia, se attribuisci valore agli incontri, non dovresti farne uso con leggerezza."
+  },
+  {
     categoria: "Armi",
     nome: "Daga",
     nomeOriginale: "ダガー",
