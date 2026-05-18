@@ -81,6 +81,16 @@ const traduzioni = [
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界に侵入する<br>（亡者では使用できない）<br><br>侵入先の世界で、世界の主を倒せば<br>人間性を得ることができる<br><br>カアスに唆された、ダークレイスたちの業<br>このひび割れた赤いオーブは<br>その業を一時的に真似るためのものである",
     traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere altri mondi. I Morti Erranti non possono usarlo.<br><br>Se sconfiggi il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questo globo rosso incrinato consente di imitare temporaneamente l’arte dei Dark Wraith, sobillati da Kaath."
   },
+  {
+    categoria: "Oggetti",
+    nome: "Elenco dei Servitori",
+    nomeOriginale: "従者名簿",
+    letturaOriginale: "jūsha meibo",
+    nomeVecchio: "Registro dei Servitori",
+    icona: "img/dark1_items/registro_servitori.png",
+    descrizioneOriginale: "オンラインプレイ専用アイテム<br>混沌の娘に仕える、従者たちを確認する<br><br>たまご背負いエンジーの管理する<br>彼の姫様、混沌の娘に仕える従者たちの名簿<br>娘に多く人間性を捧げ、その痛みをやわらげた者が<br>エンジーから高い評価を得られるようだ<br><br>…大した意味があるわけではなさそうだが",
+    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di identificare i Servitori della Figlia del Caos.<br><br>Elenco amministrato da Enji il Portatore di Uova, contenente i nomi dei servitori al servizio della sua principessa, la Figlia del Caos. Pare che coloro che offrano una grande quantità di Umanità alla ragazza, alleviandone il dolore, siano tenuti in gran considerazione da Enji.<br><br>Non che significhi molto, però..."
+  },
 /*
   {
     categoria: "Oggetti",
