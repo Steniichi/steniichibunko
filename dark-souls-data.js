@@ -52,6 +52,16 @@ const traduzioni = [
     traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di scrivere, consultare e valutare messaggi.<br><br>I messaggi vengono inviati in altri mondi, dove possono essere valutati, ed è inoltre possibile valutare a propria volta quelli ricevuti.<br><br>È uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove lo scorrere del tempo è stagnante... ma anche un mezzo con cui possono ingannarsi reciprocamente."
   },
   {
+    categoria: "Oggetti",
+    nome: "Registro dei Peccatori",
+    nomeOriginale: "罪人録",
+    letturaOriginale: "zainin roku",
+    nomeVecchio: "Libro dei Colpevoli",
+    icona: "img/dark1_items/registro_peccatori.png",
+    descrizioneOriginale: "オンラインプレイ専用アイテム<br>世界の罪人たちを確認する<br><br>罪の女神ベルカの管理する記録帳<br>罪人とは、神々や誓約を蔑ろにした者たちであり<br>いつか暗月の刃に倒れる運命にある",
+    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di identificare i peccatori del mondo.<br><br>Un registro presieduto da Velka, Dea del Peccato, in cui vengono annotati coloro che hanno oltraggiato le divinità e infranto i Voti: essi sono destinati, un giorno, a perire per mano delle Lame della Luna Oscura."
+  },
+  {
     categoria: "Armi",
     nome: "Daga",
     nomeOriginale: "ダガー",
