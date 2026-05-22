@@ -111,6 +111,16 @@ const traduzioni = [
     descrizioneOriginale: `オンラインプレイ専用アイテム<br>他世界で「竜のウロコ」を得た者を探し出し<br>その世界に侵入して「竜のウロコ」を奪う<br>（誓約者のみが使用できる）<br><br>古竜に祈り、それに近づこうとする超越者たちの業<br>生とは弱さであり、火の者である神々も例外ではない<br>超越者の目標は、生命とは別のあり様なのだ`,
     traduzione: `Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di individuare coloro che possiedono le Scaglie di Drago e di invadere il loro mondo per sottrargliele. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Arte dei Trascendenti, che pregano gli Antichi Draghi nel tentativo di avvicinarsi a essi. La vita è debolezza, e persino gli dèi, esseri del Fuoco, non fanno eccezione. L'obiettivo dei Trascendenti è raggiungere una forma d’esistenza distinta dalla vita stessa.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Globo dell'Occhio Nero",
+    nomeOriginale: "黒い瞳のオーブ",
+    letturaOriginale: "kuroi hitomi no ōbu",
+    nomeVecchio: "Globo dell'Occhio Nero",
+    icona: "img/dark1_items/occhio_nero.png",
+    descrizioneOriginale: `火防女の死体に残っていた神秘のオーブ<br><br>彼女を殺した者の世界に侵入し<br>その世界の主を倒すことができれば<br>火防女の魂を取り戻せるだろう<br><br>黒い瞳はじっとアノール・ロンドを見つめている`,
+    traduzione: `Globo arcano rimasto sul cadavere di una Guardiana del Fuoco.<br><br>Permette di invadere il mondo dell'assassino della Guardiana del Fuoco e, se riuscirai a sconfiggerlo, potresti recuperare la sua anima.<br><br>L'occhio nero è fisso su Anor Londo.`
+  },
 /*
   {
     categoria: "Oggetti",
