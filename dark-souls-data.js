@@ -151,6 +151,16 @@ const traduzioni = [
     descrizioneOriginale: `不死人の宝たる鈍い緑ガラスの瓶<br>篝火でエストを溜め、飲んでＨＰを回復する<br><br>篝火の守り手、火防女と深い関わりがあるようで<br>暗い伝承にはこんな一説がある<br><br>　火防女の魂から、その緑瓶は生まれる<br>　彼女たちは、生きて篝火を守り<br>　死してなお、その熱を守り続けるのだ`,
     traduzione: `Fiaschetta di vetro verde opaco, tesoro degli Immortali. L’Est può essere accumulato presso i falò e bevuto per ripristinare i PV.<br><br>Pare condivida un profondo legame con le Guardiane del Fuoco, custodi dei falò. Una cupa leggenda narra:<br><br>"Le fiaschette verdi nascono dalle anime delle Guardiane del Fuoco. Esse vivono per custodire i falò e continuano a preservarne il calore persino dopo la morte."`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Pendente d'Argento",
+    nomeOriginale: "銀のペンダント",
+    letturaOriginale: "gin no pendanto",
+    nomeVecchio: "Pendente d'argento",
+    icona: "img/dark1_items/pendente_argento.png",
+    descrizioneOriginale: `騎士アルトリウスの紋章が刻まれた<br>銀のペンダント<br><br>アノール・ロンドの古い宝具の１つであり<br>深淵に挑む彼に特別に贈られたもの<br><br>使用により深淵の闇<br>特に魔法の類を避ける効果がある`,
+    traduzione: `Pendente d'argento su cui vi è inciso lo stemma del Cavaliere Artorius.<br><br>Uno degli antichi tesori sacri di Anor Londo, donato in via eccezionale a colui che sfidava l'Abisso.<br><br>Se usato, offre protezione dall'oscurità dell'Abisso, in particolar modo dalle sue magie.`
+  },
 /*
   {
     categoria: "Oggetti",
