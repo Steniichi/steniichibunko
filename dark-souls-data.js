@@ -101,6 +101,16 @@ const traduzioni = [
     descrizioneOriginale: `オンラインプレイ専用アイテム<br>罪人録にある罪人たちの世界に侵入し<br>彼らを誅することで「復讐の証」を手に入れる<br>（誓約者のみが使用できる）<br><br>陰の太陽グウィンドリンに仕える<br>暗月の剣の騎士たちに与えられる神秘のオーブ<br>彼らはつまり、神々の復讐の刃なのだ`,
     traduzione: `Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere il mondo dei peccatori segnati nel Registro dei Peccatori e di ottenere una Prova di Vendetta giustiziandoli. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Questo globo arcano viene conferito ai cavalieri delle Lame della Luna Oscura, al servizio di Gwyndolin, il Sole nell'Ombra. In altre parole, essi sono le lame che incarnano la vendetta degli dèi.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Occhio di Antico Drago",
+    nomeOriginale: "古竜の瞳",
+    letturaOriginale: "koryū no hitomi",
+    nomeVecchio: "Occhio del Drago",
+    icona: "img/dark1_items/occhio_drago.png",
+    descrizioneOriginale: `オンラインプレイ専用アイテム<br>他世界で「竜のウロコ」を得た者を探し出し<br>その世界に侵入して「竜のウロコ」を奪う<br>（誓約者のみが使用できる）<br><br>古竜に祈り、それに近づこうとする超越者たちの業<br>生とは弱さであり、火の者である神々も例外ではない<br>超越者の目標は、生命とは別のあり様なのだ`,
+    traduzione: `Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di individuare coloro che possiedono le Scaglie di Drago e di invadere il loro mondo per sottrargliele. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Arte dei Trascendenti, che pregano gli Antichi Draghi nel tentativo di avvicinarsi a essi. La vita è debolezza, e persino gli dèi, esseri del Fuoco, non fanno eccezione. L'obiettivo dei Trascendenti è raggiungere una forma d’esistenza distinta dalla vita stessa.`
+  },
 /*
   {
     categoria: "Oggetti",
