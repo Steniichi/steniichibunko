@@ -129,7 +129,7 @@ const traduzioni = [
     nomeVecchio: "Segno Oscuro",
     icona: "img/dark1_items/anello_oscuro.png",
     descrizioneOriginale: `呪われた不死人の証<br>このリングが現れた者は、死んでも蘇り<br>やがて心をなくした亡者となる<br><br>リングはまた自死の力を持ち<br>使用者は人間性とソウルをすべて失い<br>最後に休息した篝火に戻る`,
-    traduzione: `Marchio di un Immortale maledetto.<br><br>Coloro sui quali appare questo anello possono risorgere dopo la morte, fino a perdere la ragione e diventare Morti Erranti.<br><br>L'anello possiede inoltre il potere della morte autoinflitta. Usandolo, il possessore perderà tutte le anime e l’Umanità in suo possesso, facendo ritorno all’ultimo falò presso cui ha riposato.`
+    traduzione: `Marchio di un Immortale maledetto.<br><br>Coloro sui quali appare questo anello possono risorgere dopo la morte, fino a perdere la ragione e diventare Morti Erranti.<br><br>L'anello possiede inoltre il potere della morte autoinflitta: usandolo, il possessore perderà tutte le anime e l’Umanità in suo possesso, facendo ritorno all’ultimo falò presso cui ha riposato.`
   },
 /*
   {
