@@ -191,6 +191,16 @@ const traduzioni = [
     descrizioneOriginale: `大輪の花のような緑の草<br>一時的に、スタミナの回復速度を上げる<br><br>独特の苦味と刺激に特徴のある草本<br>その効果により大量に栽培されることもあるが<br>本来は水辺に自生する一年草である`,
     traduzione: `Erba verde simile a un grande fiore. Aumenta temporaneamente la velocità di recupero del vigore.<br><br>Pianta erbacea caratterizzata da un sapore amaro e da un effetto stimolante. Per via delle sue proprietà viene coltivata in grandi quantità, ma originariamente è una pianta annuale che cresce spontaneamente presso le rive.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Palla di Muschio Rosso Sangue",
+    nomeOriginale: "血赤の苔玉",
+    letturaOriginale: "chiaka no kokedama",
+    nomeVecchio: "Muschio rossosangue",
+    icona: "img/dark1_items/muschio_rosso.png",
+    descrizioneOriginale: `Palla di muschio rosso dalle proprietà medicinali. Riduce l'accumulo di sanguinamento.<br><br>Il sanguinamento si accumula attraverso gli attacchi di lame affilate o spinose e, quando si verifica, provoca danni ingenti. È bene usare questa palla di muschio prima che ciò accada.`,
+    traduzione: `薬効のある赤色の苔玉<br>出血の蓄積を減らす<br><br>出血は、鋭い刃やトゲの攻撃により蓄積し<br>発生すると大きなダメージとなる<br>そうなる前に、この苔玉を使うとよい`
+  },
 /*
   {
     categoria: "Oggetti",
