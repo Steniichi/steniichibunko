@@ -7,7 +7,7 @@ const traduzioni = [
     nomeVecchio: "Pietra bianca",
     icona: "img/dark1_items/segno_bianco.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>召喚サインを書く<br><br>サインから他世界に霊体として召喚され<br>召喚されたエリアの主を倒すことができれば<br>人間性を得ることができる<br>（召喚は亡者では行えない）<br><br>時の流れの淀んだロードランの地で<br>不死人たちがお互い助け合うための手段",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di lasciare un segno d’evocazione.<br><br>Tramite tale segno, potrai essere evocato come spirito in altri mondi. Se riuscirai a sconfiggere il boss della zona in cui sei stato evocato, otterrai Umanità. I Morti Erranti non possono evocare.<br><br>È uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove lo scorrere del tempo è stagnante.",
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di tracciare un Segno d'Evocazione.<br><br>Tramite tale segno, potrai essere evocato come spirito in altri mondi. Se riuscirai a sconfiggere il signore della zona in cui sei stato evocato, otterrai Umanità. (I Morti Erranti non possono evocare.)<br><br>Uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove il fluire del tempo ristagna.",
     note: ""
   },
   {
@@ -18,7 +18,7 @@ const traduzioni = [
     nomeVecchio: "Pietra rossa",
     icona: "img/dark1_items/segno_rosso.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>侵入サインを書く<br>（亡者では使用できない）<br><br>サインから他世界に闇霊として召喚され<br>召喚者を倒せば、人間性を得ることができる<br><br>ダークレイスとして闇に堕ちたものの中にも<br>人の誇りや騎士道を忘れない者たちもいる<br>これは、そうした者たちのための手段である",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di lasciare un segno d'invasione. I Morti Erranti non possono usarlo.<br><br>Tramite tale segno, potrai essere evocato come spirito oscuro e, se riuscirai a sconfiggere l'evocatore, otterrai Umanità.<br><br>Persino tra coloro che sono sprofondati nell'Oscurità, come i Dark Wraith, vi è chi non ha mai dimenticato l'orgoglio umano e il codice cavalleresco. Questo strumento è destinato a tali individui.",
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di tracciare un Segno d'Invasione. (I Morti Erranti non possono usarlo.)<br><br>Tramite tale segno, potrai essere evocato come spirito oscuro e, se riuscirai a sconfiggere l'evocatore, otterrai Umanità.<br><br>Persino tra coloro che sono sprofondati nell'Oscurità, come i Dark Wraith, vi è chi non ha mai dimenticato l'orgoglio umano e il codice cavalleresco. Tali individui fanno uso di questo strumento.",
     note: ""
   },
   {
@@ -29,7 +29,7 @@ const traduzioni = [
     nomeVecchio: "Globo dell'occhio rosso",
     icona: "img/dark1_items/globo_rosso.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界に侵入する<br>（誓約者のみが使用でき、亡者では使用できない）<br><br>侵入先の世界で、世界の主を倒せば<br>人間性を得ることができる<br><br>カアスに唆された、ダークレイスたちの業<br>彼らは人間性を求め、さらなる闇に堕ちていく<br>あるいは、それこそが本来の人であろうか",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere altri mondi. Può essere usato soltanto da coloro che hanno prestato il Voto e non dai Morti Erranti.<br><br>Se riuscirai a sconfiggere il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questa è l'arte dei Dark Wraith, sobillati da Kaath. Essi vanno a caccia di Umanità, sprofondando sempre più nell’Oscurità. È forse questa la vera natura dell’uomo?"
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di invadere altri mondi. (Può essere usato soltanto da chi ha prestato il Voto e non dai Morti Erranti.)<br><br>Se riuscirai a sconfiggere il padrone del mondo che hai invaso, otterrai Umanità.<br><br>Questa è l'arte dei Dark Wraith, sobillati da Kaath. Essi vanno a caccia di Umanità, sprofondando sempre più nell’Oscurità. È forse questa la vera natura dell’uomo?"
   },
   {
     categoria: "Oggetti",
@@ -39,7 +39,7 @@ const traduzioni = [
     nomeVecchio: "Cristallo nero della separazione",
     icona: "img/dark1_items/quarzo_nero.png",
     descrizioneOriginale: "不死となった追放者に与えられる黒水晶は<br>古くより、決別の証であり<br>召喚した霊体を元の世界に戻し<br>召喚された他世界から元の世界に戻ることができる<br><br>だが、出会いを大切に思うのであれば<br>軽々しくこれを使用するべきではない",
-    traduzione: "Quarzo nero concesso agli Immortali esiliati. Sin dai tempi antichi, è considerato un segno di separazione. Permette di rispedire nel loro mondo gli spiriti evocati, oppure di fare ritorno al proprio mondo da un altro in cui si è stati evocati.<br><br>Tuttavia, se attribuisci valore agli incontri, non dovresti farne uso con leggerezza."
+    traduzione: "Quarzo nero concesso agli Immortali esiliati. Sin dai tempi antichi, è considerato un simbolo di commiato. Permette di rispedire nel loro mondo gli spiriti evocati, oppure di fare ritorno al proprio mondo da un altro in cui si è stati evocati.<br><br>Tuttavia, se tieni agli incontri, non usarlo con leggerezza."
   },
   {
     categoria: "Oggetti",
@@ -49,7 +49,7 @@ const traduzioni = [
     nomeVecchio: "Pietra arancione",
     icona: "img/dark1_items/pietra_arancione.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>メッセージを書く／確認する／評価する<br><br>メッセージは他世界に送られ、評価される<br>他世界からのメッセージを評価することもできる<br><br>時の流れの淀んだロードランの地で<br>不死人たちがお互い支え合うための手段であり<br>また、騙し合うための手段でもある",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di scrivere, consultare e valutare messaggi.<br><br>I messaggi vengono inviati in altri mondi, dove possono essere valutati, ed è inoltre possibile valutare a propria volta quelli ricevuti.<br><br>È uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove lo scorrere del tempo è stagnante... ma anche un mezzo con cui possono ingannarsi reciprocamente."
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di scrivere, consultare e valutare messaggi.<br><br>I messaggi vengono inviati in altri mondi e possono essere valutati; è possibile fare altrettanto con quelli ricevuti.<br><br>Uno strumento attraverso cui gli Immortali si sostengono a vicenda nella terra di Lordran, dove il fluire del tempo ristagna... ma anche uno strumento con cui possono ingannarsi reciprocamente."
   },
   {
     categoria: "Oggetti",
@@ -59,7 +59,7 @@ const traduzioni = [
     nomeVecchio: "Libro dei Colpevoli",
     icona: "img/dark1_items/registro_peccatori.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>世界の罪人たちを確認する<br><br>罪の女神ベルカの管理する記録帳<br>罪人とは、神々や誓約を蔑ろにした者たちであり<br>いつか暗月の刃に倒れる運命にある",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di identificare i peccatori del mondo.<br><br>Un registro presieduto da Velka, Dea del Peccato, in cui vengono annotati coloro che hanno oltraggiato le divinità e infranto i Voti: essi sono destinati, un giorno, a perire per mano delle Lame della Luna Oscura."
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di identificare i peccatori del mondo.<br><br>Un registro presieduto da Velka, Dea del Peccato, in cui vengono annotati coloro che hanno oltraggiato le divinità e infranto i Voti: essi sono destinati, un giorno, a cadere per mano delle Lame della Luna Oscura."
   },
   {
     categoria: "Oggetti",
@@ -69,7 +69,7 @@ const traduzioni = [
     nomeVecchio: "Occhio della morte",
     icona: "img/dark1_items/occhio_morte.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界から霊体を誘い込む<br>（誓約者のみが使用でき、亡者では使用できない）<br><br>禍々しい「死の瞳」は、他の世界に災厄をばら撒き<br>犠牲者となる霊体を誘い込むための手段である<br>犠牲者は「死の瞳」を生み、災厄は更に広がるのだ",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Attira spiriti da altri mondi. Può essere usato soltanto da coloro che hanno prestato il Voto e non dai Morti Erranti.<br><br>I nefasti Occhi della Morte seminano calamità negli altri mondi, attirando spiriti destinati a divenire vittime. Coloro che soccombono generano a loro volta altri Occhi della Morte, permettendo così alla calamità di propagarsi."
+    traduzione: "Oggetto esclusivo per il gioco online. Attira spiriti da altri mondi. Può essere usato soltanto da coloro che hanno prestato il Voto e non dai Morti Erranti.<br><br>I nefasti Occhi della Morte seminano calamità negli altri mondi, attirando spiriti destinati a divenire vittime. Coloro che soccombono generano a loro volta altri Occhi della Morte, permettendo così alla calamità di propagarsi."
   },
   {
     categoria: "Oggetti",
@@ -79,7 +79,7 @@ const traduzioni = [
     nomeVecchio: "Globo Incrinato dell'Occhio Rosso",
     icona: "img/dark1_items/occhio_incrinato.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>他の世界に侵入する<br>（亡者では使用できない）<br><br>侵入先の世界で、世界の主を倒せば<br>人間性を得ることができる<br><br>カアスに唆された、ダークレイスたちの業<br>このひび割れた赤いオーブは<br>その業を一時的に真似るためのものである",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere altri mondi. I Morti Erranti non possono usarlo.<br><br>Se sconfiggi il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questo globo rosso incrinato consente di imitare temporaneamente l’arte dei Dark Wraith, sobillati da Kaath."
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di invadere altri mondi. I Morti Erranti non possono usarlo.<br><br>Se sconfiggi il signore del mondo che hai invaso, otterrai Umanità.<br><br>Questo globo rosso incrinato consente di imitare temporaneamente l’arte dei Dark Wraith, sobillati da Kaath."
   },
   {
     categoria: "Oggetti",
@@ -89,7 +89,7 @@ const traduzioni = [
     nomeVecchio: "Registro dei Servitori",
     icona: "img/dark1_items/registro_servitori.png",
     descrizioneOriginale: "オンラインプレイ専用アイテム<br>混沌の娘に仕える、従者たちを確認する<br><br>たまご背負いエンジーの管理する<br>彼の姫様、混沌の娘に仕える従者たちの名簿<br>娘に多く人間性を捧げ、その痛みをやわらげた者が<br>エンジーから高い評価を得られるようだ<br><br>…大した意味があるわけではなさそうだが",
-    traduzione: "Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di identificare i Servitori della Figlia del Caos.<br><br>Elenco amministrato da Enji il Portatore di Uova, contenente i nomi dei servitori al servizio della sua principessa, la Figlia del Caos. Pare che coloro che offrano una grande quantità di Umanità alla ragazza, alleviandone il dolore, siano tenuti in gran considerazione da Enji.<br><br>Non che significhi molto, però..."
+    traduzione: "Oggetto esclusivo per il gioco online. Permette di identificare i Servitori della Figlia del Caos.<br><br>Elenco amministrato da Enji il Portatore di Uova, contenente i nomi dei servitori al servizio della sua principessa, la Figlia del Caos. Pare che coloro che offrano una grande quantità di Umanità alla ragazza, alleviandone il dolore, siano tenuti in gran considerazione da Enji.<br><br>Non che significhi molto, però..."
   },
   {
     categoria: "Oggetti",
@@ -99,7 +99,7 @@ const traduzioni = [
     nomeVecchio: "Globo dell'Occhio Blu",
     icona: "img/dark1_items/occhio_blu.png",
     descrizioneOriginale: `オンラインプレイ専用アイテム<br>罪人録にある罪人たちの世界に侵入し<br>彼らを誅することで「復讐の証」を手に入れる<br>（誓約者のみが使用できる）<br><br>陰の太陽グウィンドリンに仕える<br>暗月の剣の騎士たちに与えられる神秘のオーブ<br>彼らはつまり、神々の復讐の刃なのだ`,
-    traduzione: `Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di invadere il mondo dei peccatori segnati nel Registro dei Peccatori e di ottenere una Prova di Vendetta giustiziandoli. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Questo globo arcano viene conferito ai cavalieri delle Lame della Luna Oscura, al servizio di Gwyndolin, il Sole nell'Ombra. In altre parole, essi sono le lame che incarnano la vendetta degli dèi.`
+    traduzione: `Oggetto esclusivo per il gioco online. Permette di invadere il mondo dei peccatori segnati nel Registro dei Peccatori e di ottenere una Prova di Vendetta giustiziandoli. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Questo globo arcano viene conferito ai cavalieri delle Lame della Luna Oscura, al servizio di Gwyndolin, il Sole nell'Ombra. In altre parole, essi sono le lame che incarnano la vendetta degli dèi.`
   },
   {
     categoria: "Oggetti",
@@ -109,7 +109,7 @@ const traduzioni = [
     nomeVecchio: "Occhio del Drago",
     icona: "img/dark1_items/occhio_drago.png",
     descrizioneOriginale: `オンラインプレイ専用アイテム<br>他世界で「竜のウロコ」を得た者を探し出し<br>その世界に侵入して「竜のウロコ」を奪う<br>（誓約者のみが使用できる）<br><br>古竜に祈り、それに近づこうとする超越者たちの業<br>生とは弱さであり、火の者である神々も例外ではない<br>超越者の目標は、生命とは別のあり様なのだ`,
-    traduzione: `Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di individuare coloro che possiedono le Scaglie di Drago e di invadere il loro mondo per sottrargliele. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Arte dei Trascendenti, che pregano gli Antichi Draghi nel tentativo di avvicinarsi a essi. La vita è debolezza, e persino gli dèi, esseri del Fuoco, non fanno eccezione. L'obiettivo dei Trascendenti è raggiungere una forma d’esistenza distinta dalla vita stessa.`
+    traduzione: `Oggetto esclusivo per il gioco online. Permette di individuare coloro che possiedono le Scaglie di Drago e di invadere il loro mondo per sottrargliele. Può essere usato soltanto da coloro che hanno prestato il Voto.<br><br>Arte dei Trascendenti, che pregano gli Antichi Draghi nel tentativo di avvicinarsi a essi. La vita è debolezza, e persino gli dèi, esseri del Fuoco, non fanno eccezione. L'obiettivo dei Trascendenti è raggiungere una forma d’esistenza distinta dalla vita stessa.`
   },
   {
     categoria: "Oggetti",
@@ -139,7 +139,7 @@ const traduzioni = [
     nomeVecchio: "Pietra viola",
     icona: "img/dark1_items/ametista_codardi.png",
     descrizioneOriginale: `"オンラインプレイ専用アイテム<br>「試練の戦い」から離脱する<br>（ホストが離脱するとセッションは解散する）<br><br>その戦いは古来アノール・ロンドへの道であり<br>既に管理者なく、その本分が失われた今でも<br>離脱するものは臆病者の誹りを免れない<br><br>故に、この紫水晶は軽々に使用すべきでない<br>仮りそめでも、戦いに意味を求めるならば"`,
-    traduzione: `Oggetto il cui utilizzo è legato esclusivamente all'online. Permette di ritirarsi da una Battaglia del Giudizio. Se l'host si ritira, la sessione verrà interrotta.<br><br>Fin dall'antichità, queste battaglie erano il modo per raggiungere l’antica Anor Londo. Anche ora che non esiste più alcuno a supervisionarle e il loro vero scopo è andato perduto, chi si ritira non può sfuggire all'onta di essere considerato un codardo.<br><br>Dunque, se desideri attribuire un significato a queste battaglie, per quanto ormai siano soltanto una farsa, non dovresti usare questo ametista con leggerezza.`
+    traduzione: `Oggetto esclusivo per il gioco online. Permette di ritirarsi da una Battaglia del Giudizio. Se l'host si ritira, la sessione verrà interrotta.<br><br>Fin dall'antichità, queste battaglie erano il modo per raggiungere l’antica Anor Londo. Anche ora che non esiste più alcuno a supervisionarle e il loro vero scopo è andato perduto, chi si ritira non può sfuggire all'onta di essere considerato un codardo.<br><br>Dunque, se desideri attribuire un significato a queste battaglie, per quanto ormai siano soltanto una farsa, non dovresti usare questo ametista con leggerezza.`
   },
   {
     categoria: "Oggetti",
@@ -259,7 +259,7 @@ const traduzioni = [
     nomeVecchio: "Coltello da lancio",
     icona: "img/dark1_items/coltello_lancio.png",
     descrizioneOriginale: `投擲用のナイフ<br>敵に投げつける<br><br>弓などに比べ飛距離は短く、精度も低いが<br>簡単に間接攻撃ができるアイテム<br><br>これ以外に間接攻撃手段がないようであれば<br>備えとして持っておくのもよいだろう`,
-    traduzione: `Coltello da lancio da scagliare contro i nemici.<br><br>Hanno una portata inferiore e una precisione minore rispetto agli archi, ma consentono di eseguire rapidi attacchi a distanza.<br><br>Se non si dispone di altri mezzi per attaccare a distanza, potrebbe essere una buona idea portarne qualcuno con sé per precauzione.`
+    traduzione: `Coltello da lancio da scagliare contro i nemici.<br><br>Rispetto agli archi e simili, la gittata è minore e la precisione inferiore, ma consentono di sferrare attacchi a distanza con facilità.<br><br>Se non si dispone di altri mezzi per attaccare a distanza, potrebbe valere la pena tenerne qualcuno con sé come scorta..`
   },
 /*
   {
