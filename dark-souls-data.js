@@ -259,7 +259,27 @@ const traduzioni = [
     nomeVecchio: "Coltello da lancio",
     icona: "img/dark1_items/coltello_lancio.png",
     descrizioneOriginale: `投擲用のナイフ<br>敵に投げつける<br><br>弓などに比べ飛距離は短く、精度も低いが<br>簡単に間接攻撃ができるアイテム<br><br>これ以外に間接攻撃手段がないようであれば<br>備えとして持っておくのもよいだろう`,
-    traduzione: `Coltello da lancio da scagliare contro i nemici.<br><br>Rispetto agli archi e simili, la gittata è minore e la precisione inferiore, ma consentono di sferrare attacchi a distanza con facilità.<br><br>Se non si hanno altri mezzi per attaccare a distanza, potrebbe valere la pena tenerne qualcuno con sé per precauzione.`
+    traduzione: `Coltello da lancio da scagliare contro i nemici.<br><br>Rispetto agli archi e simili, la gittata è minore e la precisione inferiore, ma consente di sferrare attacchi a distanza con facilità.<br><br>Se non si hanno altri mezzi per attaccare a distanza, potrebbe valere la pena tenerne qualcuno con sé per precauzione.`
+  },
+  {
+    categoria: "Oggetti",
+    nome: "Coltello da Lancio Avvelenato",
+    nomeOriginale: "毒投げナイフ",
+    letturaOriginale: "doku nage naifu",
+    nomeVecchio: "Coltello da lancio avvelenato",
+    icona: "img/dark1_items/coltello_avvelenato.png",
+    descrizioneOriginale: `投擲用のナイフ<br>刃に毒が塗られており、敵に投げつける<br><br>弓などに比べ飛距離は短く、精度も低いが<br>簡単に間接攻撃ができるアイテム<br><br>敵を毒状態にすることができれば<br>しばらくダメージを与え続けることができる`,
+    traduzione: `Coltello da lancio con la lama intrisa di veleno, da scagliare contro i nemici.<br><br>Rispetto agli archi e simili, la gittata è minore e la precisione inferiore, ma consente di sferrare attacchi a distanza con facilità.<br><br>Se un nemico contrae l'Avvelenamento, questi continuerà a subire danni per qualche tempo.`
+  },
+  {
+    categoria: "Oggetti",
+    nome: "Vaso Incendiario",
+    nomeOriginale: "火炎壷",
+    letturaOriginale: "kaen tsubo",
+    nomeVecchio: "Bomba incendiaria",
+    icona: "img/dark1_items/vaso_incendiario.png",
+    descrizioneOriginale: `火薬の詰められた素焼きの壷<br>爆発して炎ダメージを与える<br><br>比較的威力の大きい間接攻撃であり<br>また炎ダメージが有効な場面もあるため<br>特に低レベルでは貴重なアイテムである<br><br>これを愛用し、戦術に組み込む戦士も多い`,
+    traduzione: `Vaso di terracotta riempito di polvere da sparo. Esplode causando danni da fuoco.<br><br>È relativamente potente per gli attacchi a distanza e i danni da fuoco sono efficaci in certe situazioni. È un oggetto prezioso, specialmente nelle fasi iniziali.<br><br>Molti guerrieri lo prediligono, incorporandolo nelle loro tattiche.`
   },
 /*
   {
