@@ -281,6 +281,16 @@ const traduzioni = [
     descrizioneOriginale: `火薬の詰められた素焼きの壷<br>爆発して炎ダメージを与える<br><br>比較的威力の大きい間接攻撃であり<br>また炎ダメージが有効な場面もあるため<br>特に低レベルでは貴重なアイテムである<br><br>これを愛用し、戦術に組み込む戦士も多い`,
     traduzione: `Vaso di terracotta riempito di polvere da sparo. Esplode causando danni da fuoco.<br><br>È relativamente potente per gli attacchi a distanza e i danni da fuoco sono efficaci in certe situazioni. È un oggetto prezioso, specialmente nelle fasi iniziali.<br><br>Molti guerrieri lo prediligono, incorporandolo nelle loro tattiche.`
   },
+  {
+    categoria: "Oggetti",
+    nome: "Grumo di Escrementi",
+    nomeOriginale: "糞団子",
+    letturaOriginale: "kuso dango",
+    nomeVecchio: "Escrementi",
+    icona: "img/dark1_items/escrementi.png",
+    descrizioneOriginale: `瑞々しい排泄物。大便<br>敵に投げつけ、猛毒を蓄積していくが<br>自分にも猛毒が蓄積していく<br><br>臭いも強く、あまり持ち歩きたくない類だが<br>敵を猛毒状態にすることができれば<br>しばらく大ダメージを与え続けることができる`,
+    traduzione: `Feci fresche. Quando vengono lanciate, aumentano l'accumulo di tossina del nemico colpito, ma anche di chi le lancia.<br><br>Il fetore è forte e non è il tipo di cosa che si vuole tenere con sé, ma se un nemico contrae l'Intossicazione, questi continuerà a subire ingenti danni per qualche tempo.`
+  },
 /*
   {
     categoria: "Oggetti",
