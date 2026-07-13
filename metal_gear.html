@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steniichi Bunko - Metal Gear</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --mg-green: #21ff8f;
+  --mg-green-dim: #0e5c37;
+  --mg-green-glow: rgba(33,255,143,0.55);
+  --mg-bg: #050807;
+  --mg-panel: rgba(6,14,11,0.92);
+  --mg-panel-light: rgba(14,28,22,0.92);
+  --mg-amber: #ffb400;
+  --mg-cyan: #38f0ff;
+  --mg-text: #cdeede;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(33,255,143,0.07), transparent 55%),
+    repeating-linear-gradient(0deg, rgba(33,255,143,0.035) 0px, transparent 1px, transparent 3px),
+    repeating-linear-gradient(90deg, rgba(33,255,143,0.02) 0px, transparent 1px, transparent 3px),
+    var(--mg-bg);
+  color: var(--mg-text);
+  font-family: 'Share Tech Mono', 'Consolas', monospace;
+  letter-spacing: 0.4px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.18) 0px, rgba(0,0,0,0.18) 1px, transparent 1px, transparent 3px);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.35;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+}
+
+.page {
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 80px);
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 35px 25px;
+  background: var(--mg-panel);
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 6px;
+  box-shadow: 0 0 40px rgba(33,255,143,0.08), inset 0 0 60px rgba(0,0,0,0.6);
+  flex: 0 0 auto;
+}
+
+@media (max-width: 700px) {
+  .page { width: calc(100% - 30px); padding: 25px 15px; }
+}
+
+.hud-title {
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 30px;
+  color: var(--mg-green);
+  text-shadow: 0 0 10px var(--mg-green-glow);
+  letter-spacing: 4px;
+}
+
+.hud-subtitle {
+  text-align: center;
+  margin: 0 0 30px;
+  color: var(--mg-cyan);
+  font-size: 13px;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+
+.home-btn {
+  margin-bottom: 20px;
+  padding: 8px 18px;
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--mg-green);
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.home-btn:hover {
+  background: rgba(33,255,143,0.1);
+  border-color: var(--mg-green);
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.game-block {
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 4px;
+  background: rgba(4,10,8,0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.game-block::before, .game-block::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid var(--mg-green);
+  pointer-events: none;
+}
+
+.game-block::before { top: -1px; left: -1px; border-left: 2px solid var(--mg-green); }
+.game-block::after { top: -1px; right: -1px; border-right: 2px solid var(--mg-green); }
+
+.game-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.game-header:hover {
+  background: rgba(33,255,143,0.06);
+}
+
+.game-header .toggle-icon {
+  color: var(--mg-green);
+  font-size: 14px;
+  width: 14px;
+}
+
+.game-header .cover {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.game-header .titles {
+  flex: 1;
+}
+
+.game-header h2 {
+  margin: 0;
+  font-size: 17px;
+  color: var(--mg-green);
+  letter-spacing: 1px;
+}
+
+.game-header .meta {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--mg-cyan);
+  opacity: 0.75;
+  letter-spacing: 1px;
+}
+
+.game-content {
+  display: none;
+  padding: 0 22px 26px;
+  border-top: 1px solid var(--mg-green-dim);
+}
+
+.section-label {
+  margin: 22px 0 10px;
+  font-size: 13px;
+  color: var(--mg-amber);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--mg-green-dim), transparent);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #000;
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mg-green-dim);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-box {
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 4px;
+  padding: 16px 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.intro-toggle {
+  margin-top: 10px;
+  padding: 6px 14px;
+  font-size: 12px;
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--mg-green);
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.intro-toggle:hover {
+  background: rgba(33,255,143,0.1);
+}
+
+.personaggi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.personaggio-card {
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 4px;
+  background: rgba(0,0,0,0.35);
+  padding: 12px;
+  text-align: center;
+}
+
+.personaggio-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid var(--mg-green-dim);
+  transition: 0.15s;
+}
+
+.personaggio-card img:hover {
+  border-color: var(--mg-green);
+  box-shadow: 0 0 12px var(--mg-green-glow);
+}
+
+.personaggio-card h3 {
+  margin: 10px 0 6px;
+  font-size: 14px;
+  color: var(--mg-cyan);
+  letter-spacing: 1px;
+}
+
+.personaggio-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--mg-text);
+  text-align: left;
+}
+
+.empty-note {
+  font-size: 13px;
+  color: var(--mg-green-dim);
+  font-style: italic;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,4,3,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay.active { display: flex; }
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+  border: 1px solid var(--mg-green-dim);
+  box-shadow: 0 0 40px rgba(33,255,143,0.2);
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--mg-green);
+  background: rgba(4,10,8,0.9);
+  color: var(--mg-green);
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.about {
+  margin-top: auto;
+  padding: 20px;
+  background: var(--mg-panel);
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: calc(100% - 80px);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.about img {
+  width: 70px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid var(--mg-green-dim);
+  border-radius: 3px;
+}
+
+.about-text h3 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--mg-green);
+}
+
+.about-text p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--mg-text);
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .about { flex-direction: column; text-align: center; width: calc(100% - 30px); }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <button class="home-btn" onclick="goHome()">← Torna alla Home</button>
+
+  <h1 class="hud-title">METAL GEAR SAGA</h1>
+  <p class="hud-subtitle">// ARCHIVIO TRADUZIONI &amp; VIDEO // STENIICHI BUNKO</p>
+
+  <div class="games-list" id="gamesList"></div>
+</div>
+
+<div id="overlay" class="overlay">
+  <img id="overlay-img">
+</div>
+
+<button class="top-btn" id="topBtn">↑</button>
+
+<div class="about">
+  <img src="img/steniichi_avatar.png" alt="Avatar">
+  <div class="about-text">
+    <h3>Steniichi</h3>
+    <p>
+      Studio la lingua giapponese e, per passione, mi dedico alla traduzione di diversi tipi di media. Questa sezione raccoglie i miei video sulla saga di Metal Gear, con le traduzioni delle introduzioni e le schede dei personaggi.
+    </p>
+  </div>
+</div>
+
+<script src="metal-gear-data.js"></script>
+<script>
+const gamesList = document.getElementById("gamesList");
+const overlay = document.getElementById("overlay");
+const overlayImg = document.getElementById("overlay-img");
+const topBtn = document.getElementById("topBtn");
+
+const giochiAperti = new Set();
+
+function goHome() {
+  window.location.href = "index.html";
+}
+
+function apriImmagine(src) {
+  overlay.classList.add("active");
+  overlayImg.src = src;
+}
+
+overlay.onclick = () => overlay.classList.remove("active");
+
+function renderGiochi() {
+  gamesList.innerHTML = "";
+
+  giochiMetalGear.forEach(gioco => {
+    const block = document.createElement("div");
+    block.className = "game-block";
+
+    const header = document.createElement("div");
+    header.className = "game-header";
+    header.innerHTML = `
+      <span class="toggle-icon">${giochiAperti.has(gioco.id) ? "▼" : "►"}</span>
+      ${gioco.icona ? `<img class="cover" src="${gioco.icona}" alt="${gioco.titolo}">` : ""}
+      <div class="titles">
+        <h2>${gioco.titolo}</h2>
+        <p class="meta">${gioco.sottotitolo ? gioco.sottotitolo + " // " : ""}${gioco.anno} // ${gioco.piattaforma}</p>
+      </div>
+    `;
+
+    const content = document.createElement("div");
+    content.className = "game-content";
+    content.style.display = giochiAperti.has(gioco.id) ? "block" : "none";
+
+    // Sezione video
+    const videoLabel = document.createElement("div");
+    videoLabel.className = "section-label";
+    videoLabel.textContent = "VIDEO";
+    content.appendChild(videoLabel);
+
+    const videoWrapper = document.createElement("div");
+    videoWrapper.className = "video-wrapper";
+    if (gioco.videoId && giochiAperti.has(gioco.id)) {
+      videoWrapper.innerHTML = `<iframe src="https://www.youtube.com/embed/${gioco.videoId}" title="${gioco.titolo}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    } else if (gioco.videoId) {
+      videoWrapper.innerHTML = `<div class="video-placeholder">Espandi la sezione per caricare il video.</div>`;
+    } else {
+      videoWrapper.innerHTML = `<div class="video-placeholder">Nessun video ancora collegato per questo titolo.</div>`;
+    }
+    content.appendChild(videoWrapper);
+
+    // Sezione introduzione
+    if (gioco.introTraduzione || gioco.introOriginale) {
+      const introLabel = document.createElement("div");
+      introLabel.className = "section-label";
+      introLabel.textContent = "TRADUZIONE INTRODUZIONE";
+      content.appendChild(introLabel);
+
+      const introBox = document.createElement("div");
+      introBox.className = "intro-box";
+
+      let mostraOriginale = false;
+      const introTextEl = document.createElement("p");
+      introTextEl.innerHTML = gioco.introTraduzione || "<span class='empty-note'>Traduzione non ancora inserita.</span>";
+      introBox.appendChild(introTextEl);
+
+      if (gioco.introOriginale) {
+        const toggleBtn = document.createElement("button");
+        toggleBtn.className = "intro-toggle";
+        toggleBtn.textContent = "Mostra originale";
+        toggleBtn.onclick = () => {
+          mostraOriginale = !mostraOriginale;
+          introTextEl.innerHTML = mostraOriginale
+            ? (gioco.introOriginale || "")
+            : (gioco.introTraduzione || "<span class='empty-note'>Traduzione non ancora inserita.</span>");
+          toggleBtn.textContent = mostraOriginale ? "Mostra traduzione" : "Mostra originale";
+        };
+        introBox.appendChild(toggleBtn);
+      }
+
+      content.appendChild(introBox);
+    }
+
+    // Sezione personaggi
+    const personaggiLabel = document.createElement("div");
+    personaggiLabel.className = "section-label";
+    personaggiLabel.textContent = "PERSONAGGI";
+    content.appendChild(personaggiLabel);
+
+    if (gioco.personaggi && gioco.personaggi.length > 0) {
+      const grid = document.createElement("div");
+      grid.className = "personaggi-grid";
+
+      gioco.personaggi.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "personaggio-card";
+        card.innerHTML = `
+          <img src="${p.immagine}" alt="${p.nome}">
+          <h3>${p.nome}</h3>
+          <p>${p.descrizione || ""}</p>
+        `;
+        card.querySelector("img").onclick = () => apriImmagine(p.immagine);
+        grid.appendChild(card);
+      });
+
+      content.appendChild(grid);
+    } else {
+      const empty = document.createElement("p");
+      empty.className = "empty-note";
+      empty.textContent = "Nessun personaggio ancora inserito per questo titolo.";
+      content.appendChild(empty);
+    }
+
+    header.onclick = () => {
+      if (giochiAperti.has(gioco.id)) {
+        giochiAperti.delete(gioco.id);
+      } else {
+        giochiAperti.add(gioco.id);
+      }
+      renderGiochi();
+    };
+
+    block.appendChild(header);
+    block.appendChild(content);
+    gamesList.appendChild(block);
+  });
+}
+
+renderGiochi();
+
+window.onscroll = () => {
+  topBtn.style.display = window.scrollY > 250 ? "block" : "none";
+};
+
+topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+</script>
+
+</body>
+</html>
